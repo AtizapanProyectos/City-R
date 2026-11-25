@@ -242,6 +242,7 @@ const mobileDashboard = (() => {
         }
         const appbar = document.createElement('header'); appbar.className = 'mobile-appbar';
         appbar.innerHTML = '<div class="mobile-brand-mark" aria-hidden="true">C</div><div><strong>City V</strong><span>Inteligencia territorial</span></div><a href="/logout/" class="mobile-logout">Salir</a>';
+        appbar.querySelector('strong').textContent = document.querySelector('.sidebar-titulo').textContent;
         workspace.prepend(appbar);
         const legend = document.getElementById('leyenda-mapa');
         const legendBody = document.createElement('div'); legendBody.id = 'legend-body';
